@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: blanchedalmond;
+    max-width: 100%;
+    margin: 0 auto;
+    color: var(--text-color);
+    background: var(--white);
+}
+
+:root {
+    --primary-color: #3b3b3b;
+    --secondary-color: #a9df94c2;
+    --accent-color: #ec9d90ea;
+    --border-color: #bcc3ca;
+    --text-color: #202020;
+    --white: #FFFFFF;
+
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+header svg.logo {
+    width: 36px;
+    height: 36px;
+    color: var(--primary-color);
+}
+
+header #course-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+
+header span:first-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+header nav {
+    grid-column: 1 / 4;
+    display: flex;
+    background: var(--primary-color);
+}
+
+header nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    background: var(--accent-color);
+    color: var(--primary-color);
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgb(222, 215, 255);
+}
+
+main h1 {
+    grid-column: 1 / 3;
+    margin-bottom: .5rem;
+    color: var(--primary-color);
+}
+
+.tags img {
+    width: 220px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 1.5rem auto;
+}
+
+
+.tags,
+main section:nth-of-type(2),
+main section:nth-of-type(3) {
+    border: 1px solid var(--border-color);
+    background: white;
+}
+
+
+.tags h2,
+main section:nth-of-type(2) h2,
+main section:nth-of-type(3) h2 {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: .75rem;
+}
+
+.tags p {
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+main section:nth-of-type(3) {
+    grid-column: 1 / 3;
+}
+
+.curses-buttoms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .75rem;
+    padding: 1rem;
+}
+
+button {
+    padding: .8rem;
+    border: 1px solid var(--border-color);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+.courses-buttoms button.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.course-card.incomplete {
+    background-color: var(--white);
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.course-card.completed {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+
+.credits-info {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 1rem;
+    color: var(--primary-color);
+}
+
+footer {
+    margin-top: 2rem;
+    background: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    margin: .3rem 0;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+footer nav a:hover {
+    color: var(--accent-color)
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    main h1,
+    main section:nth-of-type(3) {
+        grid-column: 1 / 2;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    header nav.open {
+        display: flex;
+    }
+}
