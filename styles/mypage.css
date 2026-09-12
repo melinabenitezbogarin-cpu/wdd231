@@ -173,17 +173,16 @@ button:hover {
     border-radius: 6px;
     text-align: center;
     font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .course-card.incomplete {
-    background-color: var(--white);
+    background-color: #d4edda;
     border: 2px solid var(--border-color);
     color: var(--text-color);
 }
 
 .course-card.completed {
-    background-color: var(--secondary-color);
+    background-color: #e2e3e5;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
 }
