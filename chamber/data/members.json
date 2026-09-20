@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Café Tortoni",
+        "address": "Av. de Mayo 825, C1084 CABA",
+        "phone": "+54 11 4342-4328",
+        "website": "https://cafetortoni.com.ar",
+        "image": "images/cafe-tortoni.jpg",
+        "membership": 3,
+        "description": "The oldest and most iconic coffeehouse in Buenos Aires."
+    },
+    {
+        "name": "El Ateneo Grand Splendid",
+        "address": "Av. Santa Fe 1860, C1042 CABA",
+        "phone": "+54 11 4813-6052",
+        "website": "https://yenny-elateneo.com.ar",
+        "image": "images/ateneo.jpg",
+        "membership": 2,
+        "description": "A world-renowned bookstore housed in a historic theater."
+    },
+    {
+        "name": "Pizzería Güerrin",
+        "address": "Av. Corrientes 1368, C1043 CABA",
+        "phone": "+54 11 4371-8141",
+        "website": "https://pizzeriaguerrin.com",
+        "image": "images/pizzeria-guerrin.jpg",
+        "membership": 3,
+        "description": "Traditional Argentine pan pizza in the heart of downtown."
+    },
+    {
+        "name": "San Telmo Antiques",
+        "address": "Defensa 1090, C1065 CABA",
+        "phone": "+54 11 4361-9920",
+        "website": "https://santelmoantiques.ar",
+        "image": "images/santelmo.jpg",
+        "membership": 1,
+        "description": "Unique historical collectibles and antique artifacts."
+    },
+    {
+        "name": "Puerto Madero Tech",
+        "address": "Juana Manso 555, C1107 CABA",
+        "phone": "+54 11 5219-4000",
+        "website": "https://pmtech.com.ar",
+        "image": "images/puerto-madero.jpg",
+        "membership": 2,
+        "description": "Custom software development and technological solutions."
+    },
+    {
+        "name": "Teatro Colón Cultural Services",
+        "address": "Cerrito 628, C1010 CABA",
+        "phone": "+54 11 4378-7100",
+        "website": "https://teatrocolon.org.ar",
+        "image": "images/teatro-colon.jpg",
+        "membership": 3,
+        "description": "Cultural event production and guided opera house tours."
+    }
+]

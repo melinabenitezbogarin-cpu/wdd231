@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buenos Aires Chamber of Commerce - Directory</title>
+    <meta name="description"
+        content="Official business directory of member companies in the Buenos Aires Chamber of Commerce.">
+    <meta name="author" content="Melina Benitez Bogarin">
+
+    <link rel="icon" href="images/favicon (1).ico">
+
+    <meta property="og:title" content="Facebook">
+    <meta property="og:description"
+        content="Discover a social media where you can find all your friends,post photos and videos,chat with people and a lot of things to stay connected">
+    <meta property="og:image"
+        content="https://pg-designs.ca/wp-content/uploads/2020/01/facebook_website_redesign_1.jpg">
+    <meta propery="og:url" content="https://www.facebook.com/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/favicon (1).ico" alt="Buenos Aires Obelisk">
+                <div class="title">
+                    <h1>Chamber of Commerce</h1>
+                    <p>Buenos Aires, Argentina</p>
+                </div>
+            </div>
+            <button id="hamburger" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Business Directory</h2>
+
+        <div class="view-menu">
+            <button id="grid-btn" class="active">Grid ▦</button>
+            <button id="list-btn">List ☰</button>
+        </div>
+
+        <article id="members-container" class="grid"></article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Buenos Aires Chamber of Commerce</h3>
+                <p>Av. Corrientes 1897</p>
+                <p>Buenos Aires, Argentina (c1043)</p>
+                <p>info@bachamer.org.ar</p>
+                <p>+54 11 5563-9966</p>
+            </div>
+            <div class="footer-dev">
+                <p>WDD 231 Project</p>
+                <p>Melina Benitez Bogarin</p>
+                <p>©️<span id="currentyear"></span> Buenos Aires Argentina Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+    </footer>
+
+</body>
+
+</html>
