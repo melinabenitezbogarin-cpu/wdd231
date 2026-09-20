@@ -43,8 +43,7 @@ function displayMembers(members) {
       <p><strong>Address:</strong> ${member.address}</p>
       <p><strong>Phone:</strong> ${member.phone}</p>
       <p><strong>Membership Level:</strong> ${levelText}</p>
-      <p><a href="${member.website}" target="_blank" rel="noopener">Visit Website</a></p>
-    `;
+      <p><a href="${member.website}" target="_blank" rel="noopener">Visit Website</a></p>`;
 
         container.appendChild(card);
     });
