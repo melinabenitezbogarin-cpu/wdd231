@@ -1,5 +1,5 @@
 :root {
-  --primary-color:#001f35;
+  --primary-color: #001f35;
   --secondary-color: #75aadb;
   --accent-color: #f59e0b;
   --background-color: #f8fafc;
@@ -82,10 +82,12 @@ nav a {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-nav a:hover, nav a.active {
+nav a:hover,
+nav a.active {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
+
 
 main {
   padding: 1rem;
@@ -93,94 +95,120 @@ main {
   margin: 0 auto;
 }
 
-main h2 {
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-  text-align: center;
-}
 
-.view-menu {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
+.hero {
+  position: relative;
   margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.view-menu button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border: 1px solid var(--primary-color);
-  background-color: #ffffff;
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.cta-btn {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--accent-color);
   color: var(--primary-color);
-  cursor: pointer;
-  border-radius: 4px;
+  padding: 0.8rem 1.6rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
 }
 
-.view-menu button.active {
-  background-color: var(--primary-color);
-  color: #ffffff;
+.cta-btn:hover {
+  background-color: #d97706;
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
-
-#members-container.grid {
+.home-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.25rem;
 }
 
-#members-container.grid section {
+.card {
   background-color: var(--card-background);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.25rem;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-#members-container.grid img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
+.card h2 {
+  color: var(--primary-color);
   margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.3rem;
+  font-size: 1.25rem;
 }
 
-#members-container.grid h3 {
+.weather #current-weather {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.weather #current-weather img {
+  width: 50px;
+  height: 50px;
+}
+
+.weather h3 {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin: 0.75rem 0 0.25rem 0;
+}
+
+.spotlights-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.spotlight-card h3 {
   color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
 
-#members-container.grid p {
-  font-size: 0.9rem;
+.spotlight-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin: 0.5rem 0;
+}
+
+.spotlight-card p {
+  font-size: 0.85rem;
   margin-bottom: 0.3rem;
 }
 
-#members-container.list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-#members-container.list section {
-  background-color: var(--card-background);
-  border: 1px solid var(--border-color);
-  padding: 0.75rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-#members-container.list img {
-  display: none;
-}
-
-#members-container.list h3 {
-  font-size: 1.1rem;
+.spotlight-card a {
   color: var(--primary-color);
-}
-
-#members-container.list p {
-  font-size: 0.85rem;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 footer {
@@ -198,7 +226,8 @@ footer {
   margin: 0 auto;
 }
 
-.footer-info p, .footer-dev p {
+.footer-info p,
+.footer-dev p {
   font-size: 0.85rem;
   margin-bottom: 0.2rem;
 }
