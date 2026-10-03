@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buenos Aires Chamber of Commerce - Join</title>
+    <meta name="description" content="This page will allowed you to join in the Buenos Aires Chamber of Commerce.">
+    <meta name="author" content="Melina Benitez Bogarin">
+
+    <link rel="icon" href="images/favicon (1).ico">
+
+    <meta property="og:title" content="Buenos Aires Chamber of Commerce - Join">
+    <meta property="og:description"
+        content="This page will allowed you to join in the Buenos Aires Chamber of Commerce.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1589909202802-8f4aadce1849?fit=crop&w=1200&h=630&q=80">
+    <meta property="og:url" content="https://melinabenitezbogarin-cpu/directory.html">
+
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="stylesheet" href="styles/join-larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="join-container">
+            <div class="logo">
+                <img src="images/favicon (1).ico" alt="Buenos Aires Obelisk">
+                <div class="title">
+                    <h1>Chamber of Commerce</h1>
+                    <p>Buenos Aires, Argentina</p>
+                </div>
+            </div>
+            <button class="hamburger "id="hamburger" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="thankyou.html" method="get" class="join-form">
+            <h2>Membership Application Form</h2>
+
+            <label for="fname">
+                First Name *
+                <input type="text" id="fname" name="fname" required autocomplete="given-name"
+                    title="Enter your last name">
+            </label>
+
+            <label for="lname">
+                Last Name *
+                <input type="text" id="lname" name="lname" required autocomplete="family-name"
+                    title="Enter your last name">
+            </label>
+
+            <label for="title">
+                Organizational Title
+                <input type="text" id="title" name="title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
+                    title="Minimum 7 characters. Only alphabetic characters, hyphens, and spaces allowed.">
+            </label>
+
+            <label for="email">
+                Email Address *
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="john89@gmail.com"
+                    title="Enter a valid email address">
+            </label>
+
+            <label for="phone">
+                Cell Phone *
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="987-555-1234"
+                    title="Enter your phone number">
+            </label>
+
+            <label for="organization">
+                Business / Organization Name *
+                <input type="text" id="organization" name="organization" required autocomplete="organization"
+                    title="Enter your organization name">
+            </label>
+
+            <label for="description">
+                Business Description
+                <textarea id="description" name="description" rows="4"
+                    title="Describe your business or organization"></textarea>
+            </label>
+
+            <fieldset class="membership-group">
+                <legend>Membership Level *</legend>
+
+                <label class="radio-label">
+                    <input type="radio" name="membership" value="np" required>
+                    Non Profit Membership (Free)
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" name="membership" value="bronze" required>
+                    Bronze Membership
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" name="membership" value="silver" required>
+                    Silver Membership
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" name="membership" value="gold" required>
+                    Gold Membership
+                </label>
+            </fieldset>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <input type="submit" value="Apply for Membership" class="submit-btn">
+        </form>
+
+        <section class="membership-cards">
+            <div class="card">
+                <h3>Non Profit Membership Level</h3>
+                <button type="button" data-modal="modal-np">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h3>Bronze Membership Level</h3>
+                <button type="button" data-modal="modal-np">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h3>Silver Membership Level</h3>
+                <button type="button" data-modal="modal-np">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h3>Gold Membership Level</h3>
+                <button type="button" data-modal="modal-np">Learn More</button>
+            </div>
+        </section>
+
+        <dialog id="modal-np" class="membership-modal">
+            <button type="button" class="close-modal" aria-label="Close dialog">X</button>
+            <h3>Non Profit Membership</h3>
+            <hr>
+            <p><strong>Benefits include:</strong></p>
+            <ul>
+                <li>Community event listing</li>
+                <li>Access to general networking events</li>
+                <li>Directory listing in non-profit section</li>
+            </ul>
+            <p class="modal-cost"><strong>COST: Free</strong></p>
+        </dialog>
+
+        <dialog id="modal-bronze" class="membership-modal">
+            <button type="button" class="close-modal" aria-label="Close dialog">X</button>
+            <h3>Bronze Membership</h3>
+            <hr>
+            <p><strong>Benefits include:</strong></p>
+            <ul>
+                <li>Basic Directory listing</li>
+                <li>Event discounts</li>
+                <li>Access to member-only Book events in The Ateneo library</li>
+            </ul>
+            <p class="modal-cost"><strong>COST: $10 annual</strong></p>
+        </dialog>
+
+        <dialog id="modal-silver" class="membership-modal">
+            <button type="button" class="close-modal" aria-label="Close dialog">X</button>
+            <h3>Silver Membership</h3>
+            <hr>
+            <p><strong>Benefits include:</strong></p>
+            <ul>
+                <li>Enhanced event listing</li>
+                <li>2 Free tickets to annual banquet in food places</li>
+                <li>Quarterly newsletter spotlight</li>
+                <li>Discount tickets to all plays in Colon Theater</li>
+            </ul>
+            <p class="modal-cost"><strong>COST: $20 annual</strong></p>
+        </dialog>
+
+        <dialog id="modal-gold" class="membership-modal">
+            <button type="button" class="close-modal" aria-label="Close dialog">X</button>
+            <h3>Gold Membership</h3>
+            <hr>
+            <p><strong>Benefits include:</strong></p>
+            <ul>
+                <li>Invitation to special events in Colon thearer in the VIP section</li>
+                <li>1 annual gift in Puerto Madero Tech and El Ateneo</li>
+                <li>Discounts every sunday in San Telmo Antiques and food places</li>
+            </ul>
+            <p class="modal-cost"><strong>COST: $30 annual</strong></p>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Buenos Aires Chamber of Commerce</h3>
+                <p>Av. Corrientes 1897</p>
+                <p>Buenos Aires, Argentina (c1043)</p>
+                <p>info@bachamer.org.ar</p>
+                <p>+54 11 5563-9966</p>
+            </div>
+            <div class="footer-dev">
+                <p>WDD 231 Project</p>
+                <p>Melina Benitez Bogarin</p>
+                <p>&copy;<span id="currentyear"></span> Buenos Aires Argentina Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
