@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --bg-color: #111827;
+    --card-bg: #1F2937;
+    --accent: #10B981;
+    --accent-secondary: #6366F1;
+    --text-color: #F3F4F6;
+    --text-muted: #9CA3AF;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--card-bg);
+    border-bottom: 3px solid var(--accent);
+    padding: 1.5rem 2rem;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(2) contrast(1.1);
+}
+
+.title h1 {
+    color: var(--accent);
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.title p {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#hamburger {
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-muted);
+    font-size: 1.5rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+#hamburger:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.site-section {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--accent);
+}
+
+.site-section h2 {
+    color: var(--accent);
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-bottom: 1px solid var(--bg-color);
+    padding-bottom: 0.5rem;
+}
+
+.site-section h3 {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.site-section p,
+.site-section li {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.site-section ul {
+    padding-left: 1.2rem;
+}
+
+.site-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para la paleta de colores (Color Scheme) */
+.color-scheme-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.color-box {
+    background-color: var(--bg-color);
+    border: 1px solid var(--accent-secondary);
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.color-box img,
+.color-box .color-sample {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5rem auto 0 auto;
+}
+
+/* Estilos para Wireframes */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.wireframe-box {
+    background-color: var(--bg-color);
+    border: 1px solid var(--accent-secondary);
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.wireframe-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5rem auto 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    color: var(--text-muted);
+    border-top: 1px solid var(--bg-color);
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
