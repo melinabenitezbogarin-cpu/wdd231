@@ -1,46 +1,21 @@
-@media screen and (min-width: 768px) {
-
-    #hamburger, .hamburger {
+@media (min-width: 768px) {
+    #hamburger {
         display: none;
     }
 
-    .menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
     nav {
         display: block;
-        background-color: transparent;
     }
 
-   
     nav ul {
         display: flex;
-        gap: 1rem;
-        margin: 0;
-        padding: 0;
+        justify-content: flex-end;
     }
 
     nav a {
         border-top: none;
-        border-radius: 4px;
+        padding: 1rem 1.5rem;
     }
-
-
-    .footer-content {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #members-container.list section {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
 
     .join-form {
         padding: 2rem;
@@ -66,5 +41,10 @@
     .membership-modal {
         max-width: 480px;
         padding: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }

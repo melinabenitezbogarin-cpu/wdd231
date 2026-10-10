@@ -44,13 +44,15 @@ header {
   height: 45px;
 }
 
-.site-title h1 {
-  font-size: 1.2rem;
+.title h1 {
+  font-size: 2.2rem;
+  margin: 0;
 }
 
-.site-title p {
-  font-size: 0.8rem;
+.title p {
+  font-size: 1.2rem;
   color: var(--secondary-color);
+  margin: 0;
 }
 
 #hamburger {
@@ -87,7 +89,6 @@ nav a.active {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
-
 
 main {
   padding: 1rem;

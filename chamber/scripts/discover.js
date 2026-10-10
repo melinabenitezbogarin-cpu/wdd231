@@ -3,6 +3,8 @@ import { items } from '../data/items.mjs';
 document.addEventListener('DOMContentLoaded', () => {
 
     const visitorMessageElement = document.getElementById('visitor-message');
+    const yearSpan = document.getElementById('currentyear');
+    const lastModP = document.getElementById('lastModified');
     const storageKey = 'chamber-last-visit';
     const currentTime = Date.now();
     const lastVisit = localStorage.getItem(storageKey);
@@ -53,4 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             discoverContainer.appendChild(card);
         });
     }
+
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    if (lastModP) lastModP.textContent = `Last Modification: ${document.lastModified}`;
 });
