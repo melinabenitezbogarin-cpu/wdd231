@@ -1,6 +1,6 @@
 export const items = [
   {
-    "name": "El Obelisco",
+    "name": "The Obelisk",
     "address": "Av. 9 de Julio y Av. Corrientes, C1043 CABA",
     "phone": "+54 11 5030-9100",
     "website": "https://turismo.buenosaires.gob.ar",
@@ -9,7 +9,7 @@ export const items = [
     "description": "Historic national monument and iconic symbol of Buenos Aires, erected in 1936 to commemorate the fourth centenary of the city's foundation."
   },
   {
-    "name": "Caminito",
+    "name": "Caminito from La Boca",
     "address": "Magallanes 1800, La Boca, C1169 CABA",
     "phone": "+54 11 4301-1055",
     "website": "https://turismo.buenosaires.gob.ar",
@@ -27,7 +27,7 @@ export const items = [
     "description": "A world-renowned historic cemetery housing elaborate architectural mausoleums and vaults of prominent Argentine figures, including Eva Perón."
   },
   {
-    "name": "Estadio Mâs Monumental (River Plate)",
+    "name": "River Plate Stadium",
     "address": "Av. Pres. Figueroa Alcorta 7597, C1428 CABA",
     "phone": "+54 11 4789-1200",
     "website": "https://www.cariverplate.com.ar",
@@ -54,7 +54,7 @@ export const items = [
     "description": "An authentic Asian street food restaurant located in the bustling Pasaje Echeverría of Buenos Aires' Chinatown, offering popular Japanese-inspired dishes."
   },
   {
-    "name": "Museo Nacional de Bellas Artes",
+    "name": "National Museum Bellas Artes",
     "address": "Av. Del Libertador 1473, C1425 CABA",
     "phone": "+54 11 5288-9900",
     "website": "https://www.bellasartes.gob.ar",
