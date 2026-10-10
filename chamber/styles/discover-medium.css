@@ -1,0 +1,78 @@
+@media screen and (min-width: 641px) {
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        display: block !important;
+        background-color: var(--primary-color);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav a {
+        border-top: none;
+        padding: 1rem 1.25rem;
+    }
+
+    .discover-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        gap: 1.5rem;
+    }
+
+    .discover-grid .card-item:nth-child(1) {
+        grid-area: card1;
+    }
+
+    .discover-grid .card-item:nth-child(2) {
+        grid-area: card2;
+    }
+
+    .discover-grid .card-item:nth-child(3) {
+        grid-area: card3;
+    }
+
+    .discover-grid .card-item:nth-child(4) {
+        grid-area: card4;
+    }
+
+    .discover-grid .card-item:nth-child(5) {
+        grid-area: card5;
+    }
+
+    .discover-grid .card-item:nth-child(6) {
+        grid-area: card6;
+    }
+
+    .discover-grid .card-item:nth-child(7) {
+        grid-area: card7;
+    }
+
+    .discover-grid .card-item:nth-child(8) {
+        grid-area: card8;
+    }
+
+    .card-item figure {
+        overflow: hidden;
+        border-radius: 6px;
+    }
+
+    .card-item img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .card-item img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1) contrast(1.05);
+    }
+}

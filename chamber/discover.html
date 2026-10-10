@@ -4,25 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buenos Aires Chamber of Commerce - Directory</title>
+    <title>Buenos Aires Chamber of Commerce - Discover</title>
     <meta name="description"
-        content="Official business directory of member companies in the Buenos Aires Chamber of Commerce.">
+        content="Discover interesting places, landmarks, and items of interest in Buenos Aires with the Chamber of Commerce.">
     <meta name="author" content="Melina Benitez Bogarin">
 
     <link rel="icon" href="images/favicon (1).ico">
 
-    <meta property="og:title" content="Buenos Aires Chamber of Commerce - Directory">
+    <meta property="og:title" content="Buenos Aires Chamber of Commerce - Discover">
     <meta property="og:description"
-        content="Official business directory of member companies in the Buenos Aires Chamber of Commerce.">
+        content="Discover interesting places, landmarks, and items of interest in Buenos Aires.">
     <meta property="og:image"
         content="https://images.unsplash.com/photo-1589909202802-8f4aadce1849?fit=crop&w=1200&h=630&q=80">
-    <meta propery="og:url" content="https://melinabenitezbogarin-cpu/directory.html">
+    <meta property="og:url" content="https://melinabenitezbogarin-cpu/discover.html">
 
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-small.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
@@ -41,22 +43,20 @@
         <nav id="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>Business Directory</h2>
+    <main class="discover-main">
+        <div id="visitor-message" class="visitor-banner"></div>
 
-        <div class="view-menu">
-            <button id="grid-btn" class="active">Grid ▦</button>
-            <button id="list-btn">List ☰</button>
-        </div>
+        <h2>Discover Buenos Aires</h2>
 
-        <div id="members-container" class="grid"></div>
+        <section class="discover-grid" id="discover-container">
+        </section>
     </main>
 
     <footer>

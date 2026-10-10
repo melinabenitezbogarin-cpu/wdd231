@@ -1,0 +1,60 @@
+@media screen and (min-width: 1025px) {
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .discover-grid {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card8";
+        gap: 2rem;
+    }
+
+    .discover-grid .card-item:nth-child(1) {
+        grid-area: card1;
+    }
+
+    .discover-grid .card-item:nth-child(2) {
+        grid-area: card2;
+    }
+
+    .discover-grid .card-item:nth-child(3) {
+        grid-area: card3;
+    }
+
+    .discover-grid .card-item:nth-child(4) {
+        grid-area: card4;
+    }
+
+    .discover-grid .card-item:nth-child(5) {
+        grid-area: card5;
+    }
+
+    .discover-grid .card-item:nth-child(6) {
+        grid-area: card6;
+    }
+
+    .discover-grid .card-item:nth-child(7) {
+        grid-area: card7;
+    }
+
+    .discover-grid .card-item:nth-child(8) {
+        grid-area: card8;
+    }
+
+    .card-item {
+        padding: 1.5rem;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .card-item:hover {
+        box-shadow: 0 8px 16px rgba(0, 0.3, 0.5, 0.1);
+    }
+}
