@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a mentor - Be productive not just busy</title>
+    <meta name="description" content="You can fill a form to get a mentor in this page">
+    <meta name="author" content="Melina Benitez Bogarin">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/faviconp.ico">
+
+    <link rel="stylesheet" href="styles/mentor-small.css">
+    <link rel="stylesheet" href="styles/mentor-large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <meta property="og:title" content="Get a mentor - Be productive not just busy">
+    <meta property="og:description" content="You can fill a form to get a mentor in this page">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/faviconp.ico" alt="Balance">
+                <div class="title">
+                    <h1>Be productive</h1>
+                </div>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <a href="mentor.html" class="btn-mentor" class="active">Get a Mentor</a>
+                <button id="hamburger" aria-label="Toggle Navigation Menu">☰</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form action="thankyou.html" method="get" class="join-form">
+            <h2>Have a Mentor this week!</h2>
+
+            <label for="flname">
+                First and Last Name *
+                <input type="text" id="flname" name="flname" required autocomplete="given-name"
+                    title="Enter your first and last name">
+            </label>
+
+            <label for="email">
+                Email Address *
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="john89@gmail.com"
+                    title="Enter a valid email address">
+            </label>
+
+            <label for="product-select">Mentor Area</label>
+            <select name="product" id="product-select" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <label for="install-date">Date to Begin</label>
+            <label><input type="date" id="install-date" name="installDate" required></label>
+
+            <label for="install-date">Date to Finish</label>
+            <label><input type="date" id="install-date" name="installDate" required></label>
+
+            <label for="written-review">Add specific information you want to focus on...<span
+                    class="optional">(Optional)</span></label>
+            <textarea name="writtenReview" id="written-review" rows="4"></textarea>
+
+            <input type="submit" value="Get a Mentor" class="submit-btn">
+        </form>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Be productive not just busy</h3>
+                <p>Av. Corrientes 1897</p>
+                <p>Buenos Aires, Argentina (c1043)</p>
+                <p>info@bachamer.org.ar</p>
+                <p>+54 11 5563-9966</p>
+            </div>
+            <div class="footer-dev">
+                <p>WDD 231 Project</p>
+                <p>Melina Benitez Bogarin</p>
+                <p>&copy;<span id="currentyear"></span> Be productive not just busy</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

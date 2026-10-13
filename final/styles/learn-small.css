@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --bg-color: #111827;
+    --card-bg: #1F2937;
+    --accent: #10B981;
+    --accent-secondary: #6366F1;
+    --text-color: #F3F4F6;
+    --text-muted: #9CA3AF;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--card-bg);
+    border-bottom: 3px solid var(--accent);
+    padding: 1.5rem 2rem;
+    height: 30px;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(2) contrast(1.1);
+}
+
+.title h1 {
+    color: var(--accent);
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.title p {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#hamburger {
+    display: block;
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-muted);
+}
+
+#hamburger:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-mentor {
+    display: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.learn-section {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--accent);
+}
+
+.learn-section h2 {
+    color: var(--accent);
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-bottom: 1px solid var(--bg-color);
+    padding-bottom: 0.5rem;
+}
+
+
+
+.learn-section p {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+footer {
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--card-border);
+    padding: 2.5rem 1.5rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-info h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+}
+
+.footer-info p,
+.footer-dev p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 0.25rem 0;
+}

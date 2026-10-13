@@ -1,0 +1,10 @@
+@media screen and (min-width: 640px) {
+    #resources-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .title h1 {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --bg-color: #111827;
+    --card-bg: #1F2937;
+    --accent: #10B981;
+    --accent-secondary: #6366F1;
+    --text-color: #F3F4F6;
+    --text-muted: #9CA3AF;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--card-bg);
+    border-bottom: 3px solid var(--accent);
+    padding: 1.5rem 2rem;
+    height: 30px;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(2) contrast(1.1);
+}
+
+.title h1 {
+    color: var(--accent);
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.title p {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#hamburger {
+    display: block;
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-muted);
+}
+
+#hamburger:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.join-form {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.join-form h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.join-form label {
+    display: block;
+    margin-bottom: 1.2rem;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="date"],
+.join-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0.8rem;
+    margin-top: 0.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: var(--card-bg);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.join-form input:focus,
+.join-form textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(117, 170, 219, 0.3);
+}
+
+.submit-btn {
+    background-color: var(--accent);
+    color: #ffffff;
+    border: none;
+    padding: 0.9rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-secondary);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+footer {
+    background-color: var(--card-bg);
+    color: #ffffff;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info p,
+.footer-dev p {
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+}

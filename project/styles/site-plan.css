@@ -121,7 +121,6 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* Estilos para la paleta de colores (Color Scheme) */
 .color-scheme-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -146,7 +145,6 @@ main {
     margin: 0.5rem auto 0 auto;
 }
 
-/* Estilos para Wireframes */
 .wireframe-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
