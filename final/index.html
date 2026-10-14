@@ -22,6 +22,8 @@
     <meta property="og:title" content="Home - Be productive not just busy">
     <meta property="og:description"
         content="This page will help people to have disciple, learn how to make good goals and plans,and stop procrastinating.">
+
+    <script src="scripts/home.js" defer></script>
 </head>
 
 <body>
@@ -53,37 +55,63 @@
             <h2 class="hero-title-top">BE PRODUCTIVE</h2>
             <h2 class="hero-title-bottom">NOT JUST BUSY</h2>
             <picture>
-                <img src="images/home-beproductive.jpg" alt="Puerto Madero Lake and buildings" width="1200px"
-                    height="500px" loading="eager">
+                <img src="images/home-beproductive.jpg" alt="Puerto Madero Lake and buildings" width="1200" height="500"
+                    loading="eager">
             </picture>
         </div>
-        <section class="site-section">
-            <h2>Site Name</h2>
-            <p><strong>Site Name:</strong> Be productive not just busy</p>
-            <p>
-                <strong>Reason for selection:</strong> This name directly reflects the main objective of the project:
-                guiding people to focus on intentional actions, develop daily discipline, and achieve meaningful goals
-                rather than simply filling their schedules to feel occupied.
-            </p>
+        <section class="site-section intro-section">
+            <h2>Do you want to progress but at the same time you feel stuck?</h2>
+            <div class="intro-content">
+                <p>Our lives are so full, and there are more and more people dealing with stress every day.</p>
+                <p class="highlight-question">But what can we do to progress and not give up in the process?</p>
+                <p>There are so many things in our lives that can look productive, but they only keep us busy.
+                    In this page you will learn how to detect them, how to stop procrastinating, and how to create
+                    achievable goals with effective plans.</p>
+            </div>
+        </section>
+
+        <section class="site-section start-section">
+            <h2>Where can I start?</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <p>We recommend starting by understanding your current situation.</p>
+                    <a href="learn.html" class="card-link">Go to Learn Page</a>
+                </div>
+
+                <div class="card">
+                    <p>Check out all the useful resources and tools we have prepared for you.</p>
+                    <a href="resources.html" class="card-link">Explore Resources</a>
+                </div>
+
+                <div class="card">
+                    <p>Get a mentor to guide you and take your experience to the next level.</p>
+                    <a href="mentor.html" class="card-link">Find a Mentor</a>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <div class="footer-content">
             <div class="footer-info">
                 <h3>Be productive not just busy</h3>
-                <p>Av. Corrientes 1897</p>
-                <p>Buenos Aires, Argentina (c1043)</p>
-                <p>info@bachamer.org.ar</p>
-                <p>+54 11 5563-9966</p>
-            </div>
-            <div class="footer-dev">
-                <p>WDD 231 Project</p>
                 <p>Melina Benitez Bogarin</p>
+                <p>beproductive@gmail.com</p>
+                <p>WDD 231 Project</p>
                 <p>&copy;<span id="currentyear"></span> Be productive not just busy</p>
                 <p id="lastModified"></p>
             </div>
         </div>
     </footer>
+    <dialog id="resource-modal">
+        <div class="modal-content">
+            <button id="close-modal" aria-label="Close modal">&times;</button>
+            <h3 id="modal-title"></h3>
+            <span id="modal-category" class="badge"></span>
+            <p><strong>Time Commitment:</strong> <span id="modal-time"></span></p>
+            <p id="modal-description"></p>
+            <button id="fav-btn" class="btn-fav">⭐ Save to Favorites</button>
+        </div>
+    </dialog>
 </body>
 
 </html>

@@ -23,11 +23,10 @@ header {
     background-color: var(--card-bg);
     border-bottom: 3px solid var(--accent);
     padding: 1.5rem 2rem;
-    height: 30px;
 }
 
 .header-container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -65,6 +64,8 @@ header {
     background: transparent;
     color: var(--text-color);
     border: 1px solid var(--text-muted);
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
 }
 
 #hamburger:hover {
@@ -82,6 +83,8 @@ nav.open {
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
 }
 
 nav a {
@@ -93,8 +96,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--accent-secondary);
+    color: var(--text-color);
 }
 
 .header-right {
@@ -108,63 +111,288 @@ nav a.active {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-.learn-section {
+
+.intro-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.intro-section h2 {
+    color: var(--accent);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.intro-section p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.aspects-section {
+    max-width: 900px;
+    margin: 3rem auto;
+}
+
+.aspects-section h2 {
+    color: var(--accent);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.aspects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.aspect-card {
     background-color: var(--card-bg);
     border-radius: 8px;
-    padding: 1.5rem 2rem;
-    margin-bottom: 1.5rem;
+    padding: 1.5rem;
     border-left: 4px solid var(--accent);
 }
 
-.learn-section h2 {
+.aspect-card h3 {
     color: var(--accent);
     margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.aspect-card p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.aspect-card.wide-card {
+    width: 100%;
+    box-sizing: border-box;
+    border-left-color: var(--accent-secondary);
+}
+
+
+.topics-section {
+    max-width: 900px;
+    margin: 3rem auto;
+}
+
+.topics-section>h2 {
+    color: var(--accent);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.topic-item {
+    margin-bottom: 3rem;
+    background: transparent;
+}
+
+.topic-item h3 {
+    color: var(--accent);
     font-size: 1.3rem;
     font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.topic-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.topic-content img {
+    width: 100%;
+    max-width: 380px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.topic-content p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+.learn-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.learn-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.2rem;
+    border-top: 3px solid var(--accent);
+    text-align: center;
+}
+
+.learn-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.learn-card h4 {
+    color: var(--accent);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.learn-card p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+
+.motivation-section {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 3rem auto;
+    border-left: 4px solid var(--accent);
+}
+
+.motivation-section h2 {
+    color: var(--accent);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
     border-bottom: 1px solid var(--bg-color);
     padding-bottom: 0.5rem;
 }
 
-
-
-.learn-section p {
+.motivation-section p {
     color: var(--text-color);
     font-size: 1rem;
-    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 1rem;
 }
+
+.motivation-section p:last-child {
+    margin-bottom: 0;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 30px 25px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card-link {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--bg-color);
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: filter 0.2s ease;
+}
+
+.card-link:hover {
+    filter: brightness(1.15);
+}
+
 
 
 footer {
     background-color: var(--card-bg);
-    border-top: 1px solid var(--card-border);
-    padding: 2.5rem 1.5rem;
-    margin-top: 4rem;
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .footer-info h3 {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 0.75rem;
     color: var(--text-color);
+    margin: 0;
 }
 
-.footer-info p,
-.footer-dev p {
-    font-size: 0.8rem;
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.footer-info p {
+    font-size: 0.9rem;
     color: var(--text-muted);
-    margin: 0.25rem 0;
+    margin: 0;
+}
+
+.footer-info p:first-child {
+    color: var(--text-color);
+    font-weight: 400;
 }

@@ -1,0 +1,165 @@
+@media (min-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.5rem;
+        margin: 0;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    .btn-mentor {
+        display: inline-block;
+        background-color: var(--text-color);
+        color: var(--accent);
+        padding: 0.5rem 1.25rem;
+        border-radius: 13px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.9rem;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    .btn-mentor:hover {
+        background-color: var(--accent);
+        color: var(--text-color);
+    }
+
+    .header-container,
+    main,
+    .intro-section,
+    .aspects-section,
+    .topics-section {
+        max-width: 1000px;
+    }
+
+
+    .aspects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .aspect-card.wide-card {
+        grid-column: span 2;
+    }
+
+
+    .topic-item:nth-child(2) .topic-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .topic-item:nth-child(3) .topic-content {
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+
+
+    .topic-item:nth-child(4) .topic-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .topic-content img {
+        width: 40%;
+        max-width: 380px;
+        flex-shrink: 0;
+    }
+
+    .topic-content p {
+        flex: 1;
+    }
+
+    .learn-cards-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .learn-card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .learn-item {
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "text img"
+            "cards cards";
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        background-color: transparent;
+        padding: 0;
+        border-left: none;
+        margin-bottom: 3.5rem;
+    }
+
+    .learn-item h3 {
+        grid-area: title;
+        margin: 0 0 1rem 0;
+        color: var(--accent);
+        text-align: left !important;
+    }
+
+    .learn-item p {
+        grid-area: text;
+        margin: 0;
+        color: var(--text-color);
+        align-self: center;
+    }
+
+    .learn-item img {
+        grid-area: img;
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+
+    .learn-item:nth-of-type(2) {
+        grid-template-areas:
+            "title title"
+            "img text"
+            "cards cards";
+    }
+
+    .learn-item:nth-of-type(3) {
+        grid-template-areas:
+            "title title"
+            "text img"
+            "cards cards";
+    }
+
+    .learn-cards-container {
+        grid-area: cards;
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .learn-card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}

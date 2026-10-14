@@ -177,21 +177,40 @@ main {
 
 footer {
     background-color: var(--card-bg);
-    color: #ffffff;
-    padding: 1.5rem 1rem;
-    margin-top: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    max-width: 1200px;
+    align-items: center;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-.footer-info p,
-.footer-dev p {
-    font-size: 0.85rem;
-    margin-bottom: 0.2rem;
+.footer-info h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.footer-info p:first-child {
+    color: var(--text-color);
+    font-weight: 400;
 }
