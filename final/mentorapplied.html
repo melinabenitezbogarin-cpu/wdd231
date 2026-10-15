@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Have a Mentor! - Be productive not just busy</title>
+    <meta name="description" content="Confirmation that you have successfully secured a mentor.">
+    <meta name="author" content="Melina Benitez Bogarin">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/faviconp.ico">
+
+    <link rel="stylesheet" href="styles/mentor-small.css">
+    <link rel="stylesheet" href="styles/mentor-large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <script src="scripts/mentorapplied.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/faviconp.ico" alt="Balance">
+                <div class="title">
+                    <h1>Be productive</h1>
+                </div>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="mentor.html" class="active">Get a Mentor</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <button id="hamburger" aria-label="Toggle Navigation Menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="applied-container">
+        <h2>You Now Have a Mentor!</h2>
+        <p>Congratulations! Your request has been processed successfully and you are all set for this week. Here is the
+            summary of your mentoring plan:</p>
+
+        <section class="submitted-data">
+            <h3>Mentor Assignment Summary</h3>
+            <ul>
+                <li><strong>First and Last Name:</strong> <span id="display-flname"></span></li>
+                <li><strong>Email Address:</strong> <span id="display-email"></span></li>
+                <li><strong>Mentor Area:</strong> <span id="display-product"></span></li>
+                <li><strong>Date to Begin:</strong> <span id="display-startdate"></span></li>
+                <li><strong>Date to Finish:</strong> <span id="display-finishdate"></span></li>
+                <li><strong>Focus Information:</strong> <span id="display-review"></span></li>
+            </ul>
+        </section>
+
+        <a href="index.html" class="home-btn">Return to Home Page</a>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Be productive not just busy</h3>
+                <p>Melina Benitez Bogarin</p>
+                <p>beproductive@gmail.com</p>
+                <p>WDD 231 Project</p>
+                <p>&copy;<span id="currentyear"></span> Be productive not just busy</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

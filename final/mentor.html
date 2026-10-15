@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="styles/mentor-large.css">
     <link rel="stylesheet" href="styles/normalize.css">
 
+    <script src="scripts/mentor.js" defer></script>
+
     <meta property="og:title" content="Get a mentor - Be productive not just busy">
     <meta property="og:description" content="You can fill a form to get a mentor in this page">
 </head>
@@ -37,46 +39,53 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="learn.html">Learn</a></li>
                     <li><a href="resources.html">Resources</a></li>
+                    <li><a href="mentor.html" class="btn-mentor active">Get a Mentor</a></li>
                 </ul>
             </nav>
 
             <div class="header-right">
-                <a href="mentor.html" class="btn-mentor" class="active">Get a Mentor</a>
                 <button id="hamburger" aria-label="Toggle Navigation Menu">☰</button>
             </div>
         </div>
     </header>
     <main>
-        <form action="thankyou.html" method="get" class="join-form">
+        <form action="mentorapplied.html" method="get" class="join-form">
             <h2>Have a Mentor this week!</h2>
 
-            <label for="flname">
-                First and Last Name *
+            <div class="form-group">
+                <label for="flname">First and Last Name *</label>
                 <input type="text" id="flname" name="flname" required autocomplete="given-name"
                     title="Enter your first and last name">
-            </label>
+            </div>
 
-            <label for="email">
-                Email Address *
+            <div class="form-group">
+                <label for="email">Email Address *</label>
                 <input type="email" id="email" name="email" required autocomplete="email" placeholder="john89@gmail.com"
                     title="Enter a valid email address">
-            </label>
+            </div>
 
-            <label for="product-select">Mentor Area</label>
-            <select name="product" id="product-select" required>
-                <option value="" disabled selected>Select a Product ...</option>
-            </select>
+            <div class="form-group">
+                <label for="option-select">Mentor Area</label>
+                <select name="option" id="option-select" required>
+                    <option value="" disabled selected>Select an option ...</option>
+                </select>
+            </div>
 
-            <label for="install-date">Date to Begin</label>
-            <label><input type="date" id="install-date" name="installDate" required></label>
+            <div class="form-group">
+                <label for="start-date">Date to Begin</label>
+                <input type="date" id="start-date" name="startDate" required>
+            </div>
 
-            <label for="install-date">Date to Finish</label>
-            <label><input type="date" id="install-date" name="installDate" required></label>
+            <div class="form-group">
+                <label for="finish-date">Date to Finish</label>
+                <input type="date" id="finish-date" name="finishDate" required>
+            </div>
 
-            <label for="written-review">Add specific information you want to focus on...<span
-                    class="optional">(Optional)</span></label>
-            <textarea name="writtenReview" id="written-review" rows="4"></textarea>
-
+            <div class="form-group">
+                <label for="written-review">Add specific information you want to focus on... <span
+                        class="optional">(Optional)</span></label>
+                <textarea name="writtenReview" id="written-review" rows="4"></textarea>
+            </div>
             <input type="submit" value="Get a Mentor" class="submit-btn">
         </form>
     </main>

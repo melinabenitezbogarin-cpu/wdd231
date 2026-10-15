@@ -4,7 +4,7 @@
     }
 
     nav {
-        display: flex !important;
+        display: flex;
     }
 
     nav ul {
@@ -30,7 +30,7 @@
     }
 
     .btn-mentor:hover {
-        background-color: var(--accent);
+        background-color: var(--text-color);
         color: var(--text-color);
     }
 

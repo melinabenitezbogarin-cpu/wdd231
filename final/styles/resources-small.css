@@ -23,11 +23,10 @@ header {
     background-color: var(--card-bg);
     border-bottom: 3px solid var(--accent);
     padding: 1.5rem 2rem;
-    height: 30px;
 }
 
 .header-container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -65,6 +64,8 @@ header {
     background: transparent;
     color: var(--text-color);
     border: 1px solid var(--text-muted);
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
 }
 
 #hamburger:hover {
@@ -82,6 +83,8 @@ nav.open {
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
 }
 
 nav a {
@@ -93,8 +96,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--accent-secondary);
+    color: var(--text-color);
 }
 
 .header-right {
@@ -103,8 +106,18 @@ nav a.active {
     gap: 1rem;
 }
 
-.btn-mentor {
-    display: none;
+nav li a.btn-mentor {
+    background-color: var(--text-color);
+    color: var(--accent);
+    font-weight: 600;
+    text-align: center;
+    margin: 0.75rem 1rem;
+    border-radius: 6px;
+    border-bottom: none;
+}
+
+nav li a.btn-mentor:hover {
+    background-color: var(--accent-secondary);
 }
 
 main {

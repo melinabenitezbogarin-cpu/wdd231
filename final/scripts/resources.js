@@ -1,5 +1,16 @@
 import { items } from '../data/information.mjs';
 
+const hamburger = document.getElementById('hamburger');
+const primaryNav = document.getElementById('menu');
+
+
+if (hamburger && primaryNav) {
+    hamburger.addEventListener('click', () => {
+        primaryNav.classList.toggle('open');
+        hamburger.textContent = primaryNav.classList.contains('open') ? '✕' : '☰';
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const visitorMessageElement = document.getElementById('visitor-message');

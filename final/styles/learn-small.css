@@ -106,8 +106,18 @@ nav a.active {
     gap: 1rem;
 }
 
-.btn-mentor {
-    display: none;
+nav li a.btn-mentor {
+    background-color: var(--text-color);
+    color: var(--accent);
+    font-weight: 600;
+    text-align: center;
+    margin: 0.75rem 1rem;
+    border-radius: 6px;
+    border-bottom: none;
+}
+
+nav li a.btn-mentor:hover {
+    background-color: var(--accent-secondary);
 }
 
 main {
